@@ -1,0 +1,13 @@
+
+
+    ImageIcon icon = new ImageIcon(getClass().getResource("/imagens/fundo.jpg/"));
+    Image image =  icon.getImage();
+
+    painelDesktop = new javax.swing.JDesktopPane(){
+
+        public void paintComponent(Graphics g){
+            g.drawImage(image, 0, 0, getWidth(), getHeight(),this);
+
+        }
+
+    };
